@@ -1,0 +1,129 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  
+
+  color-scheme: light dark;
+  color: black;
+  background-color: pink;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+main{
+  
+  color: rgb(255, 255, 255);
+}
+
+select{
+  height: 50px;
+  width: 400px;
+  font-size:20px;
+  margin:auto;
+}
+
+.device-container
+{
+  display: flex;
+  justify-content: center;
+  margin:auto;
+  width: 100%;
+  margin-top:10px;
+}
+
+.select-container {
+  display: flex; /* Use flexbox for horizontal layout */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  margin: auto; /* Center the container */
+  width: 100%; /* Full width of the parent */
+  max-width: 927px; /* Set a maximum width for the container */
+  margin-top: 10px; /* Space above the container */
+  padding: 20px; /* Padding around the container */
+  background-color: rgb(198, 163, 129); /* Light background color */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  border: 1px solid #ced4da; /* Light border for definition */
+  overflow: auto; /* Prevent overflow */
+}
+
+.select-container div {
+  margin: 0 10px; /* Horizontal spacing between each checkbox */
+  text-align: center; /* Center text for each item */
+}
+
+.select-container label {
+  font-size: larger;
+  display: inline-block; /* Make labels inline block elements */
+  margin-right: 5px; /* Space between label and checkbox */
+  font-weight: bold; /* Make the label text bold */
+  color: #000000; /* Dark text color */
+}
+
+.select-container input[type="checkbox"] {
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Optional: Add hover effect on checkbox */
+.select-container input[type="checkbox"]:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+  transition: transform 0.2s; /* Smooth transition */
+}
+
+/* Optional: Style for selected checkboxes */
+.select-container input[type="checkbox"]:checked + label {
+  color: #d11f04; /* Change label color when checkbox is checked */
+  text-decoration: underline; /* Underline when selected */
+}
+
+
+
+.device-container{
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top:40px;
+}
+
+
+/* Container to hold the input and the icon */
+.input-container {
+  position: relative;            /* Allows positioning inside the container */
+  width: 350px;                  /* Adjust the width */
+  margin: 20px auto;             /* Center the container */
+}
+
+/* Style the input box */
+.url-input {
+  display: block;
+  width: 100%;                   /* Full width relative to the container */
+  height: 50px;
+  padding: 10px 15px 10px 50px;  /* Extra left padding for the icon */
+  font-size: 18px;
+  border: 2px solid #ced4da;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease;
+}
+
+/* Style the icon */
+.icon {
+  position: absolute;
+  left: 15px;                    /* Position the icon inside the input */
+  top: 50%;
+  transform: translateY(-50%);   /* Center the icon vertically */
+  font-size: 20px;               /* Adjust the size of the icon */
+  color: #6c757d;
+  pointer-events: none;          /* Prevent icon from blocking input actions */
+}
+
+/* On input focus, change styles */
+.url-input:focus {
+  border-color: #6c757d;         /* Highlight the border on focus */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);  /* Enhance the shadow */
+}

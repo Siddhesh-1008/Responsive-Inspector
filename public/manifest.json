@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "CHROME EXTENSION TO TEST RESPONSIVENEES OF UR WEBSITE ",
+  "description": "Base Level Extension",
+  "version": "1.0",
+  "permissions": ["tabs"],
+  "action": {
+    "default_icon": "tester.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
